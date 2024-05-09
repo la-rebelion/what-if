@@ -8,7 +8,7 @@ const config: Config = {
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://what-if.in',
+  url: 'https://what-if.in/',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
@@ -17,6 +17,7 @@ const config: Config = {
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
+  trailingSlash: false,
 
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
@@ -31,13 +32,21 @@ const config: Config = {
       'classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
       {
-        docs: {
-          sidebarPath: './sidebars.ts',
-        },
-        blog:  false, // Optional: disable the blog plugin
+        docs: false, // Optional: disable the docs plugin
         // {
-        //   showReadingTime: true,
+        //   sidebarPath: './sidebars.ts',
         // },
+        blog:  //false, // Optional: disable the blog plugin
+        {
+          showReadingTime: true,
+          routeBasePath: '/', // Serve the blog at the site's root
+          path: './blog',
+          postsPerPage: 10,
+          blogListComponent: '@theme/BlogListPage',
+          blogPostComponent: '@theme/BlogPostPage',
+          blogTagsListComponent: '@theme/BlogTagsListPage',
+          blogTagsPostsComponent: '@theme/BlogTagsPostsPage',
+        },
         theme: {
           customCss: './src/css/custom.css',
         },
@@ -50,7 +59,7 @@ const config: Config = {
 
   themeConfig: {
     // Replace with your project's social card
-    image: 'img/docusaurus-social-card.jpg',
+    image: 'img/what-if-quest.jpeg',
     navbar: {
       title: 'What If',
       logo: {
@@ -58,15 +67,20 @@ const config: Config = {
         src: 'img/logo.svg',
       },
       items: [
+        // {
+        //   type: 'docSidebar',
+        //   sidebarId: 'leadershipSidebar',
+        //   position: 'left',
+        //   label: 'Leadership',
+        // },
+        // {to: '/blog', label: 'Blog', position: 'left'},
         {
-          type: 'docSidebar',
-          sidebarId: 'leadershipSidebar',
+          to: '/newsletter',
+          label: 'Newsletter',
           position: 'left',
-          label: 'Leadership',
         },
-        {to: '/blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/facebook/docusaurus',
+          href: 'https://github.com/la-rebelion',
           label: 'GitHub',
           position: 'right',
         },
@@ -112,6 +126,14 @@ const config: Config = {
               label: 'GitHub',
               href: 'https://github.com/la-rebelion',
             },
+            {
+              label: 'K1s Terminal',
+              href: 'https://k1s.sh',
+            },
+            {
+              label: 'APICove',
+              href: 'https://apicove.com',
+            }
           ],
         },
       ],
