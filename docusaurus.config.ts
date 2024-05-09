@@ -75,9 +75,9 @@ const config: Config = {
         // },
         // {to: '/blog', label: 'Blog', position: 'left'},
         {
-          to: '/newsletter',
           label: 'Newsletter',
           position: 'left',
+          to: '/' //'/newsletter',
         },
         {
           href: 'https://github.com/la-rebelion',
@@ -94,7 +94,7 @@ const config: Config = {
           items: [
             {
               label: 'Leadership',
-              to: '/leadership',
+              to: '/' //'/leadership',
             },
           ],
         },
