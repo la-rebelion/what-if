@@ -26,3 +26,10 @@ yarn upgrade @mui/material @mui/icons-material @emotion/styled @emotion/react @m
 # Time to swizzle!
 yarn swizzle @docusaurus/theme-classic BlogLayout --eject
 ```
+
+The list of post to be displayed on the Blog page is customized using the `BlogPostItems` component (plural). We are going to use the MUI `Card` component to display the list of blog posts, with the [Instagram-like](https://mui.com/joy-ui/react-card/#instagram-post) layout.
+
+```bash
+# Time to swizzle!
+yarn swizzle @docusaurus/theme-classic BlogPostItems --eject --danger
+```

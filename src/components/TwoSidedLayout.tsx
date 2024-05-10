@@ -12,12 +12,12 @@ export default function TwoSidedLayout({
     <Container
       sx={(theme) => ({
         position: 'relative',
-        minHeight: '100vh',
+        minHeight: 'auto',
         display: 'flex',
         flexDirection: reversed ? 'column-reverse' : 'column',
         alignItems: 'center',
         py: 10,
-        gap: 4,
+        gap: 4,        
         [theme.breakpoints.up(834)]: {
           flexDirection: 'row',
           gap: 6,

@@ -41,11 +41,12 @@ const config: Config = {
           showReadingTime: true,
           routeBasePath: '/', // Serve the blog at the site's root
           path: './blog',
-          postsPerPage: 10,
+          postsPerPage: 3,
           blogListComponent: '@theme/BlogListPage',
           blogPostComponent: '@theme/BlogPostPage',
           blogTagsListComponent: '@theme/BlogTagsListPage',
           blogTagsPostsComponent: '@theme/BlogTagsPostsPage',
+          blogSidebarCount: 0
         },
         theme: {
           customCss: './src/css/custom.css',

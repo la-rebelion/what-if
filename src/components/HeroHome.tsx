@@ -26,7 +26,7 @@ export default function HeroHome() {
         Welcome to the ultimate destination for tech professionals seeking to elevate their skills.
       </Typography>
       <Box
-        component="form"
+        // component="form"
         sx={{
           display: 'flex',
           gap: 1,
