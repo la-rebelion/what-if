@@ -1,6 +1,5 @@
 import React from 'react';
 import { BlogPostProvider } from '@docusaurus/theme-common/internal';
-import BlogPostItem from '@theme/BlogPostItem';
 import type { Props } from '@theme/BlogPostItems';
 import InstagramPost from '@site/src/components/InstagramPost';
 import BlogPostItemContainer from '@theme/BlogPostItem/Container';

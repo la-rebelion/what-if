@@ -26,6 +26,10 @@ const config: Config = {
   //   defaultLocale: 'en',
   //   locales: ['en'],
   // },
+  customFields: {
+    // custom environment config
+    hsKey: process.env.REACT_APP_HUBSPOT_API_KEY
+  },
 
   presets: [
     [
@@ -41,7 +45,7 @@ const config: Config = {
           showReadingTime: true,
           routeBasePath: '/', // Serve the blog at the site's root
           path: './blog',
-          postsPerPage: 3,
+          postsPerPage: 4,
           blogListComponent: '@theme/BlogListPage',
           blogPostComponent: '@theme/BlogPostPage',
           blogTagsListComponent: '@theme/BlogTagsListPage',
@@ -147,9 +151,8 @@ const config: Config = {
   } satisfies Preset.ThemeConfig,
   scripts: [
     {
-      src: 'https://sendfox.com/js/form.js',
+      src: 'https://js.hsforms.net/forms/embed/v2.js',
       async: true,
-      defer: true,
     },
   ],
 };
