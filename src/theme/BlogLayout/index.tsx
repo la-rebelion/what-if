@@ -6,6 +6,7 @@ import BlogSidebar from '@theme/BlogSidebar';
 
 import type { Props } from '@theme/BlogLayout';
 import HeroHome from '@site/src/components/HeroHome';
+import HubSpotForm from '@site/src/components/HubSpotForm';
 
 export default function BlogLayout(props: Props): JSX.Element {
   const { sidebar, toc, children, ...layoutProps } = props;
@@ -28,6 +29,10 @@ export default function BlogLayout(props: Props): JSX.Element {
               'col--9 col--offset-1': !hasSidebar,
             })}>
             {children}
+            {/* Opposite to HeroHome, only if it is not '/' root path route */}
+            {location.pathname !== '/' && (
+              <HubSpotForm />
+            )}
           </main>
           {toc && <div className="col col--2">{toc}</div>}
         </div>

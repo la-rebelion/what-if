@@ -106,7 +106,8 @@ export default function InstagramPost({
                 <BlogPostItemFooter />
                 <BlogPostItemHeaderInfo />
             </CardContent>
-            <CardContent orientation="horizontal" sx={{ gap: 1 }}>
+            {/* @todo Add comments functionality */}
+            {/* <CardContent orientation="horizontal" sx={{ gap: 1 }}>
                 <IconButton size="sm" variant="plain" color="neutral" sx={{ ml: -1 }}>
                     <Face />
                 </IconButton>
@@ -119,7 +120,7 @@ export default function InstagramPost({
                 <Link disabled underline="none" role="button">
                     Post
                 </Link>
-            </CardContent>
+            </CardContent> */}
         </Card>
     );
 }

@@ -33,3 +33,9 @@ The list of post to be displayed on the Blog page is customized using the `BlogP
 # Time to swizzle!
 yarn swizzle @docusaurus/theme-classic BlogPostItems --eject --danger
 ```
+
+For the posts content, we are to eject the `BlogPostItem` component to customize the layout of the post content.
+
+```bash
+yarn swizzle @docusaurus/theme-classic BlogPostItem --eject --danger
+```
