@@ -28,8 +28,11 @@ const config: Config = {
   // },
   customFields: {
     // custom environment config
-    hsKey: process.env.REACT_APP_HUBSPOT_API_KEY
   },
+  markdown: {
+    mermaid: true,
+  },
+  themes: ['@docusaurus/theme-mermaid'],
 
   presets: [
     [
@@ -58,6 +61,18 @@ const config: Config = {
         gtag: {
           trackingID: 'G-14KN7FGN5Y',
         },
+        sitemap: {
+          lastmod: 'date',
+          changefreq: 'weekly',
+          priority: 0.5,
+          ignorePatterns: ['/tags/**'],
+          filename: 'sitemap.xml',
+          createSitemapItems: async (params) => {
+            const {defaultCreateSitemapItems, ...rest} = params;
+            const items = await defaultCreateSitemapItems(rest);
+            return items.filter((item) => !item.url.includes('/page/'));
+          },
+        },
       } satisfies Preset.Options,
     ],
   ],
@@ -66,7 +81,7 @@ const config: Config = {
     // Replace with your project's social card
     image: 'img/what-if-quest.jpeg',
     navbar: {
-      title: 'What If',
+      title: 'What If In',
       logo: {
         alt: 'What If Logo',
         src: 'img/logo.svg',
@@ -80,8 +95,24 @@ const config: Config = {
         // },
         // {to: '/blog', label: 'Blog', position: 'left'},
         {
-          label: 'Newsletter',
+          to: '/tags/leadership',
+          label: 'Leadership',
           position: 'left',
+        },
+        // @todo add wiin characters
+        // {
+        //   to: '/characters',
+        //   label: 'Characters',
+        //   position: 'left',
+        // },
+        {
+          href: 'https://www.buymeacoffee.com/larebelion',
+          label: 'Add Cafeine ☕',
+          position: 'right',
+        },
+        {
+          label: 'Newsletter',
+          position: 'right',
           to: '/' //'/newsletter',
         },
         {

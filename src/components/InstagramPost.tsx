@@ -46,9 +46,11 @@ export default function InstagramPost({
                 </IconButton>
             </CardContent>
             <CardOverflow>
-                <AspectRatio ratio={600 / 520} variant="outlined" maxHeight={300}>
-                    <img src="/img/what-if-hologram.jpeg" alt="" loading="lazy" />
-                </AspectRatio>
+                <a href={permalink}>
+                    <AspectRatio ratio={600 / 520} variant="outlined" maxHeight={300}>
+                        <img src="/img/what-if-hologram.jpeg" alt="" loading="lazy" />
+                    </AspectRatio>
+                </a>
             </CardOverflow>
             <CardContent orientation="horizontal" sx={{ alignItems: 'center', mx: -1 }}>
                 <Box sx={{ width: 0, display: 'flex', gap: 0.5 }}>
@@ -63,7 +65,7 @@ export default function InstagramPost({
                     </IconButton>
                 </Box>
                 <Box sx={{ display: 'flex', alignItems: 'center', gap: 0.5, mx: 'auto' }}>
-                    { ' ' }
+                    {' '}
                     {/* {[...Array(5)].map((_, index) => (
                         <Box
                             key={index}

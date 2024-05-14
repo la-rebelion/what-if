@@ -33,7 +33,7 @@ image: ./what-if-quest.jpeg
 date: 2024-05-12
 ---
 
-Step into a world where innovation knows no bounds – welcome to the what-if blog, where the possibilities are endless. Inspired by the "What If" miniseries from Marvel Studios, we're here to explore a multiverse of opportunities in software engineering, systems design, leadership, and beyond.
+Step into a world where **innovation** knows no bounds – welcome to the **what-if** blog, where the possibilities are endless. Inspired by the "**What If**" miniseries from Marvel Studios, we're here to **explore a multiverse of opportunities in software engineering, systems design, leadership**, and beyond.
 
 <!--truncate-->
 
