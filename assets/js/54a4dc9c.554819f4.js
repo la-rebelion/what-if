@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkwhat_if=self.webpackChunkwhat_if||[]).push([[7852],{3403:a=>{a.exports=JSON.parse('{"tag":{"label":"what-if","permalink":"/tags/what-if","allTagsPath":"/tags","count":1,"unlisted":false},"listMetadata":{"permalink":"/tags/what-if","page":1,"postsPerPage":4,"totalPages":1,"totalCount":1,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkwhat_if=self.webpackChunkwhat_if||[]).push([[619],{635:a=>{a.exports=JSON.parse('{"tag":{"label":"leadership","permalink":"/tags/leadership","allTagsPath":"/tags","count":1,"unlisted":false},"listMetadata":{"permalink":"/tags/leadership","page":1,"postsPerPage":4,"totalPages":1,"totalCount":1,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);

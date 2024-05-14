@@ -1,5 +1,0 @@
-{
-    "yaml.schemas": {
-        "https://json.schemastore.org/github-workflow.json": "file:///home/ades/projects/wifin/wifin-website/.github/workflows/deploy.yaml"
-    }
-}

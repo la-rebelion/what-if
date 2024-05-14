@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkwhat_if=self.webpackChunkwhat_if||[]).push([[9505],{6328:e=>{e.exports=JSON.parse('{"tag":{"label":"resilience","permalink":"/tags/resilience","allTagsPath":"/tags","count":1,"unlisted":false},"listMetadata":{"permalink":"/tags/resilience","page":1,"postsPerPage":4,"totalPages":1,"totalCount":1,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);

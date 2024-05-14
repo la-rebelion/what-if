@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkwhat_if=self.webpackChunkwhat_if||[]).push([[2483],{9034:a=>{a.exports=JSON.parse('{"tag":{"label":"teamwork","permalink":"/tags/teamwork","allTagsPath":"/tags","count":1,"unlisted":false},"listMetadata":{"permalink":"/tags/teamwork","page":1,"postsPerPage":4,"totalPages":1,"totalCount":1,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);

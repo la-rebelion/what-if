@@ -1,7 +1,0 @@
-{
-  // This file is not used in compilation. It is here just for a nice editor experience.
-  "extends": "@docusaurus/tsconfig",
-  "compilerOptions": {
-    "baseUrl": ".", // This must be set to resolve the paths below
-  }
-}
